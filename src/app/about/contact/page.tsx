@@ -1,3 +1,4 @@
+
 export default function Contact() {
     console.log('This is in client or server component?')
     return (

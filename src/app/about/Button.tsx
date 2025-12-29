@@ -4,6 +4,7 @@ import React, { useState } from "react";
 interface Post {
     id: number;
     title: string;
+    firstName: string;
 }
 
 export default function Button({ data }: { data?: unknown }) {
@@ -17,7 +18,7 @@ export default function Button({ data }: { data?: unknown }) {
       {showData && (
         <ul>
             {Array.isArray(data) && data.map((item: Post) => (
-                <li key={item.id}>{item.title}</li>
+                <li key={item.id}>{item.firstName}</li>
             ))}
         </ul>
       )}
